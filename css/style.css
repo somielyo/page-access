@@ -201,7 +201,7 @@ h5, h6 {
 |__/  |__/|________/|__/  |__/|_______/ |________/|__/  |__/
 */
 
-.header {
+header {
     padding: 2rem;
     background-color: var(--yellow-light);
 
@@ -211,7 +211,7 @@ h5, h6 {
 
 /* Mobile Styles */
 @media (max-width: 767px) {
-    .header {
+    header {
       height: auto;
     }
     .header-logo,
@@ -264,7 +264,7 @@ h5, h6 {
   
   /* Tablet Styles */
   @media (min-width: 768px) and (max-width: 991px) {
-    .header {
+    header {
       height: auto;
     }
     .header-logo,
@@ -352,7 +352,7 @@ h5, h6 {
 /*************************************************************/
 
 
-.header .inner {
+header .inner {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -485,7 +485,7 @@ h5, h6 {
 |__/      \______/  \______/    |__/   |________/|__/  |__/
 */
 
-.footer {
+footer {
     padding: 4rem 2rem;
 
     background-color: var(--black);  
