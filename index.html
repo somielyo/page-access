@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -30,7 +30,7 @@
     
     <div class="container">
 
-        <div class="header">
+        <header>
 
             <div class="inner">
 
@@ -43,6 +43,7 @@
                 </div>
                 
                 <!-- Nav -->
+            <nav>
                 <ul class="header-nav">
                     <li class="header-nav-item">
                         <a href="#section-1" class="header-nav-link">Voyages</a>
@@ -54,10 +55,11 @@
                         <a href="#section-3" class="header-nav-link">Contact</a>
                     </li>
                 </ul>
+            </nav>
 
                 <!-- Rechercher -->
                 <div class="header-search">
-                    <form action="#" class="header-search-form">
+                    <form action="#" class="header-search-form" role="search">
                         <label for="search-input" class="sr-only">Chercher</label>
                         <input id="search-input" type="text" class="header-search-input">
                         <button class="header-search-btn">
@@ -91,7 +93,7 @@
             </div>
             <!-- / inner -->
 
-        </div>
+        </header>
         <!-- / header -->
 
         <div class="color-palet">
@@ -104,8 +106,9 @@
             <span></span>
         </div>
 
+        <main>
         <!-- Produit ajout panier -->
-        <div id="section-1" class="section section-1">
+        <section id="section-1" class="section section-1">
             <div class="inner">
 
                 <h1>Nos voyages</h1>
@@ -161,11 +164,11 @@
 
             </div>
             <!-- / inner -->
-        </div>
+        </section>
         <!-- / Produit ajout panier -->
 
         <!-- Tableau -->
-        <div id="section-2" class="section section-2">
+        <section id="section-2" class="section section-2">
             <div class="inner">
 
                 <h1>Nos assurances</h1>
@@ -181,15 +184,15 @@
                     <tbody>
                         <tr role="row">
                             <th scope="row" aria-label="Assurance médicale">Assurance médicale</th>
-                            <td aria-describedby="assurance1">3.99 € / jour</td>
+                            <td>3.99 € / jour</td>
                         </tr>
                         <tr role="row">
                             <th scope="row" aria-label="Assurance rapatriement">Assurance rapatriement</th>
-                            <td aria-describedby="assurance2">100 € / personne</td>
+                            <td>100 € / personne</td>
                         </tr>
                         <tr role="row">
                             <th scope="row" aria-label="Assurance mise en quarantaine">Assurance mise en quarantaine</th>
-                            <td aria-describedby="assurance3">79 € / nuit (hôtel ***)</td>
+                            <td>79 € / nuit (hôtel ***)</td>
                         </tr>
                     </tbody>
                     <tfoot>
@@ -200,11 +203,11 @@
                 </table>
             </div>
             <!-- / inner -->
-        </div>
+        </section>
         <!-- / Tableau -->
 
         <!-- Formulaire de contact -->
-        <div id="section-3" class="section section-3">
+        <section id="section-3" class="section section-3">
             <div class="inner">
 
                 <h1>Nous contacter</h1>
@@ -216,13 +219,13 @@
                             <legend>Civilité *</legend>
                             <div>
                               <label for="madame">
-                                <input type="radio" name="civilite" id="madame" aria-labelledby="civility">
+                                <input type="radio" name="civilite" id="madame">
                                 Madame
                               </label>
                             </div>
                             <div>
                               <label for="monsieur">
-                                <input type="radio" name="civilite" id="monsieur" aria-labelledby="civility">
+                                <input type="radio" name="civilite" id="monsieur">
                                 Monsieur
                               </label>
                             </div>
@@ -257,11 +260,12 @@
                 </form>
             
             </div>
-        </div>
+        </section>
         <!-- / Formulaire de contact -->
+    </main>
 
         <!-- Footer -->
-        <div class="footer">
+        <footer>
             <div>© Tous droits réservé Warren Walter</div>
             
             <ul class="credits-photo">
@@ -274,7 +278,7 @@
                 <li>Icon Cross par <a href="https://www.flaticon.com/authors/pixel-perfect">Pixel perfect</a> sur <a href="https://www.flaticon.com/">flaticon</a></li>
             </ul>
 
-        </div>
+        </footer>
         <!-- / Footer -->
 
     </div>
