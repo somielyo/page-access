@@ -219,7 +219,7 @@ header {
     width: 30px;
     height: 3px;
     background-color: rgb(0, 0, 0);
-    margin: 5px auto;
+    margin: 6px auto;
     transition: all 0.3s ease-in-out;
   }
 /* Mobile Styles */
@@ -253,9 +253,19 @@ header {
     }
     .menu-btn {
         display: block;
+        
       }
+
+      .product-item {
+        width: auto;
+        margin:5px;
+        height: min-content;
+      }
+      .product-container {
+        display: flex;
     
-     /* .menu-btn.active span:nth-child(2) {
+      }
+     .menu-btn.active span:nth-child(2) {
         opacity: 0;
       }
     
@@ -267,7 +277,7 @@ header {
       .menu-btn.active span:nth-child(3) {
         transform: rotate(-45deg);
         margin-top: -10px;
-      }*/
+      }
 
   }
   
