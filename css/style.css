@@ -202,150 +202,75 @@ h5, h6 {
 */
 
 header {
+    
     padding: 2rem;
     background-color: var(--yellow-light);
 
 }
 
 /************** responsive design by Somiya  *****************/
-
+.menu-btn {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .menu-btn span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+  }
 /* Mobile Styles */
 @media (max-width: 767px) {
     header {
-      height: auto;
+    display: block;
+    height: auto;
     }
-    .header-logo,
-    .header-nav,
+   nav .header-nav,
     .header-search,
     .shoppingcart {
-      display: table-row;
-      margin-left: 2rem;
-      justify-content: flex-end;
+      position: relative; 
+      display: none;
+      margin: 10px 0 0;
+      justify-items: baseline;
+      /*justify-content: flex-end;*/
     }
-    .header-nav {
-      margin-bottom: 20px;
+    .header-nav{
+        
     }
-    .header-nav-item{
+    .header-nav-item {
+        display: flex;
+        margin: 10px 0 0;*/
+        margin-left: 0em;
         width: 100%;
-        display: table-row;
-        flex: 0 0 100%;
-        margin-bottom: 1rem;
-        flex: 0 0 auto;
-        margin-left: 2rem;
+        
     }
-    .header-search {
-      margin-bottom: 20px;
+    .header-nav-link {
+        width: 100%;
+        margin-left: 0ch;
     }
-    .header-search-form {
-      display: inline-block;
-      width: 100%;
-      max-width: 400px;
-      margin: 0 auto;
-    }
-    .header-search-input {
-      width: 100%;
-    }
-    .shoppingcart-item-number {
-      display: inline-block;
-      margin-right: 20px;
-      margin-bottom: 10px;
-    }
-    .shoppingcart-label {
-      display: block;
-      margin-bottom: 5px;
-    }
-    .shoppingcart-list {
-      display: none;
-    }
-    .shoppingcart-valided {
-      display: none;
-    }
+    .menu-btn {
+        display: block;
+      }
+    
+     /* .menu-btn.active span:nth-child(2) {
+        opacity: 0;
+      }
+    
+      .menu-btn.active span:nth-child(1) {
+        transform: rotate(45deg);
+        margin-top: 10px;
+      }
+    
+      .menu-btn.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        margin-top: -10px;
+      }*/
+
   }
   
-  /* Tablet Styles */
-  @media (min-width: 768px) and (max-width: 991px) {
-    header {
-      height: auto;
-    }
-    .header-logo,
-    .header-nav,
-    .header-search,
-    .shoppingcart {
-      display: flex;
-      vertical-align: middle;
-      margin-bottom: 0;
-    }
-    .header-logo {
-      margin-right: 30px;
-    }
-    .header-nav {
-      margin-right: 30px;
-    }
-    .header-nav-link{
-        display: table-row;
-    }
-    .header-search-form {
-      display: inline-block;
-      width: 100%;
-      max-width: 300px;
-    }
-    .header-search-input {
-      width: 80%;
-      display: inline-block;
-      margin-right: 10px;
-    }
-    .header-search-btn {
-      width: 20%;
-      display: inline-block;
-      vertical-align: middle;
-    }
-    .shoppingcart-item-number {
-      display: inline-block;
-      margin-right: 20px;
-    }
-    .shoppingcart-list {
-      position: absolute;
-      right: 0;
-      top: 100%;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      z-index: 10;
-      padding: 10px;
-      display: none;
-      width: 300px;
-    }
-    .shoppingcart-list:before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: -10px;
-      right: 20px;
-      border-style: solid;
-      border-width: 0 10px 10px 10px;
-      border-color: transparent transparent #ccc transparent;
-    }
-    .shoppingcart-list:after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: -8px;
-      right: 21px;
-      border-style: solid;
-      border-width: 0 9px 9px 9px;
-      border-color: transparent transparent #fff transparent;
-    }
-    .shoppingcart-list li {
-      padding: 10px 0;
-      border-bottom: 1px solid #ccc;
-      font-size: 14px;
-    }
-    .shoppingcart-list li:last-child {
-      border-bottom: none;
-    }
-    .shoppingcart-valided {
-      display: none;
-    }
-  }
   
 
 
@@ -834,3 +759,17 @@ table {
     color: var(--white);
     border-color: var(--white);
 }
+
+
+/* responsive tooo*//
+ 
+
+/* Default styles for the menu button */
+.menu-btn {
+    display: none;
+  }
+  
+  /* Styles for the menu button when it's open */
+  .menu-btn.open span {
+    background-color: #333;
+  }
