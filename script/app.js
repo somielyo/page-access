@@ -173,3 +173,14 @@ var container = document.querySelector(".header-nav");
                         container2.style.display = "none";
                         }
                     });
+
+
+////////////////////////////////////////////////
+
+const myButton = document.getElementById('menu-btn');
+                    myButton.addEventListener('keydown', function(event) {
+                      if (event.key === 'Enter') {
+                        // Perform the click action here
+                        myButton.click();
+                      }
+                    });
