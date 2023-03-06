@@ -153,3 +153,23 @@ telephoneInput.addEventListener('input', () => {
     telephoneError.style.display = 'block';
   }
 });
+
+
+/// responsive design //////////
+var container = document.querySelector(".header-nav");
+                    var container1 = document.querySelector(".header-search");
+                    var container2 = document.querySelector(".shoppingcart");
+                    var toggleButton = document.querySelector(".menu-btn");
+            
+                    toggleButton.addEventListener("click", function() {
+
+                        if (container.style.display === "none") {
+                        container.style.display = "flex";
+                        container1.style.display = "flex";
+                        container2.style.display = "flex";
+                        } else {
+                            container.style.display = "none";
+                        container1.style.display = "none";
+                        container2.style.display = "none";
+                        }
+                    });
