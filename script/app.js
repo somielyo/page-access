@@ -165,12 +165,12 @@ var container = document.querySelector(".header-nav");
 
                         if (container.style.display === "none") {
                         container.style.display = "flex";
-                        container1.style.display = "flex";
-                        container2.style.display = "flex";
+                        //container1.style.display = "flex";
+                        //container2.style.display = "flex";
                         } else {
                             container.style.display = "none";
-                        container1.style.display = "none";
-                        container2.style.display = "none";
+                        //container1.style.display = "none";
+                        //container2.style.display = "none";
                         }
                     });
 
